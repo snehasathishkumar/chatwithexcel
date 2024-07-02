@@ -6,7 +6,7 @@ import pandas as pd
 
 
 api_key = get_key(".env", key_to_get="GEMINI_API_KEY")
-llm = genai(model="gemini-1.5-flash-latest",google_api_key=api_key)
+llm = genai(model="gemini-1.5-flash-latest",google_api_key=api_key,)
 
 st.set_page_config(page_title="Ask your CSV")
 st.header("Ask your CSV 📈")
